@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <script type="text/javascript" src="request.js"></script>
 
     <title>Narrow Jumbotron Template for Bootstrap</title>
 
@@ -32,10 +33,20 @@
 
       <div class="jumbotron">
         <h1>Jumbotron heading</h1>
-        <p class="lead">Just to be clear. This is in spanish by accident</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <p class="lead" id=json>Just to be clear. This is in spanish by accident</p>
+        <form>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput">Summoner name</label>
+            <input type="text" class="form-control" id="sm_name1" placeholder="">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput2">Summoner name to compare</label>
+            <input type="text" class="form-control" id="sm_name1" placeholder="">
+          </fieldset>
+        </form> 
+        <p><a class="btn btn-lg btn-success" href="#" id="su_button" role="button">Compare</a></p>
       </div>
-
+      
       <div class="row marketing">
         <div class="col-lg-6">
           <h4>Subheading</h4>
